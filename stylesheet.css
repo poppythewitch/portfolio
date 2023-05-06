@@ -1,0 +1,390 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    min-width: 300px;
+    overflow-x: hidden;
+}
+
+
+
+body {
+    background-color: white;
+    color: black;
+
+    
+}
+
+
+h2, h3
+{
+font-family: "degular-display", sans-serif;
+font-weight: 800;
+}
+
+h1 {
+font-family: "degular-display", sans-serif;
+text-align: center;
+font-size: 8rem;
+line-height: 5.5rem;
+z-index: 4;
+position: relative;
+word-wrap: break-word;
+font-weight: 800;
+
+}
+
+h5 {
+    font-family: "degular-display", sans-serif;
+    color: #bb96eb;
+    font-size: 5rem;
+    position: relative;
+    z-index: 4;
+    display: flex;
+    text-align: center;
+     justify-content: center;
+     align-items: center;
+     margin: 0 auto;
+     position: relative;
+     font-weight: 400;
+    
+}
+
+a {
+    font-family: "degular-display", sans-serif;
+color: black;
+text-decoration: none;
+font-weight: 400;
+}
+
+p {
+    font-family: "degular-display", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+/* CLASSES*/
+
+
+.test-list li {
+margin: 0;
+padding: 10px;
+list-style: none;
+background-repeat: no-repeat;
+background-position: left center;
+background-size: 40px;
+
+
+}
+
+.parent {
+max-width: 100%;
+padding: 10px;
+display: flex;
+flex-direction:row;
+justify-content: space-evenly;
+align-content: stretch;
+position: relative;
+}
+
+.child {
+height: 50px;
+width: 25%;
+flex-basis: 25%;
+margin: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-grow: 1;
+}
+
+.second-child {
+max-width: 100%;
+min-width: 200px;
+margin-right: 20px;
+display: flex;
+flex-direction: row;
+
+flex-grow: 1;
+}
+
+.parent-type {
+display: flex;
+flex-wrap: wrap;
+max-width: 100%;
+font-family: montserrat;
+font-size: 75px;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-weight: 400;
+}
+
+
+.purple-button {
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: "degular-display", sans-serif;
+    border: solid;
+    border-radius: 10rem;
+    border-width: 2px;
+    border-color: #000000;
+    display: none;
+    }
+    
+    .purple-button:hover {
+    background-color: #dedeff;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1rem;
+    text-transform: uppercase;
+    display: none;
+    }
+
+.blue-button {
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: "degular-display", sans-serif;
+    border: solid;
+    border-radius: 10rem;
+    border-width: 2px;
+    border-color: #000000;
+}
+
+.blue-button:hover {
+    background-color: #deeeff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.pink-button {
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: "degular-display", sans-serif;
+    border: solid;
+    border-radius: 10rem;
+    border-width: 2px;
+    border-color: #000000;
+    }
+    
+.pink-button:hover {
+    background-color: #f6deff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    }
+
+
+.search-bar {
+color: black;
+background-color: #f4f4f4;
+text-align: left;
+font-size: 1rem;
+text-transform: uppercase;
+font-family: "degular-display", sans-serif;
+border-radius: 0px;
+border: none;
+}
+ 
+.search-bar:hover {
+    background-color: rgb(167, 167, 167);
+    }
+
+.search-bar::placeholder {
+    color: black;
+
+}
+
+.searchbutton {
+    font-family: "degular-display", sans-serif;
+    border-radius: 0px;
+    border: none;
+    color: black;
+    }
+    
+    .searchbutton:hover {
+    background-color: white;
+    }
+
+.page-hero {
+    z-index: 0;
+    position: relative;
+    padding: 50px 50px;
+
+}
+
+.page-hero::after {
+    z-index: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    filter: blur(5.5rem);
+    top: -50px;
+    bottom: 180px;
+    left: 400;
+    right: 0px;
+    width: 100%;
+    height: calc(100% + 90px);
+    background: radial-gradient(circle, rgba(166,117,255,1) 0%, rgba(121,193,255,1) 28%, rgba(255,255,255,1) 50%, rgba(0,136,255,0) 100%);
+    opacity: 60%;
+}
+
+.mobile-nav {
+    display: none;
+
+}
+
+
+header {
+    z-index: 2;
+    position: relative;
+}
+
+.line {
+    width: 100%;
+    border-bottom: 2px solid black;
+    position: relative;
+    z-index: 3;
+    }
+
+.tag {
+    z-index: 3;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-family: "degular-display", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    position: relative;
+  
+}
+
+.btn {
+    display: flex;
+   text-align: center;
+    justify-content: center;
+    max-width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 4;
+    padding: 1rem;
+    position: relative;
+    font-size: 4rem;
+    
+}
+
+.body {
+   margin: 30px;
+    width: 100%;
+   
+
+}
+
+.left-column {
+    flex-direction: row;
+margin-right: 15px;
+padding: 10px;
+text-align: justify;
+}
+
+.right-column {
+    flex-direction: row;
+margin-left: 15px;
+padding: 10px;
+text-align: justify;
+}
+
+
+footer {
+    text-align: center;
+}
+
+.border {
+    border-color: rgb(0, 0, 0);
+border-width: 3px;
+border-style: solid;
+border-radius: 100%;
+position: relative;
+height: 10px;
+
+}
+
+.portfolio-row-1 {
+    display: flex;
+    width: 100%;
+    margin: 2px;
+    box-sizing: border-box;
+    height: 20%;
+}
+
+.portfolio-row-2 {
+    display: flex;
+    width: 100%;
+    margin: 2px;
+    box-sizing: border-box;
+    height: 20%;
+}
+
+.portfolio-row-3 {
+    display: flex;
+    width: 100%;
+    margin: 2px;
+    box-sizing: border-box;
+    height: 20%;
+}
+
+.portfolio-row-4 {
+    display: flex;
+    width: 100%;
+    margin: 2px;
+    box-sizing: border-box;
+    height: 20%;
+}
+
+.portfolio-image {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin-left: 1px;
+    margin-right: 1px;
+    line-height: 0;
+}
+
+
+  .section-001 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .section-002 {
+    margin: 40px;
+  }
+
+  .section-003 {
+    margin: 40px;
+  }
+
+
+
+@media (max-width: 580px) {
+    h1 {font-size: 6rem !important;
+    line-height: 3.5rem;}
+    .mobile-nav {display: flex;
+    flex-wrap: wrap; flex-direction: row;}
+    .desktop-nav {display: none;}
+}
+
+@media (max-width: 464px) {
+    h1 {font-size: 4rem !important;
+    line-height: 2.5rem;}
+    }
